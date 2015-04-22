@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+<script>
+	//crear una clase computador y asignarle 5 atributos por defecto
+
+	function Computador(){
+		this.ram= '4GB';
+		this.discoDuro = '500GB';
+		this.procesador = '2,4 GHz';
+		this.peso = '1,7gm';
+		this.color = 'plata';
+	}
+// ejercicio 2
+// crear 3 instancias de la clase computador.
+// instancia 1: agregarle mas ram.
+// instancia 2: aumentar espacio en disco duro.
+// instancia 3: cambiar el procesador:
+	var compu1 = new Computador();
+	var compu2 = new Computador();
+	var compu3 = new Computador();
+	compu1.ram = '8GB';
+	compu2.discoDuro = '1TB';
+	compu3.procesador = '4 GHz';
+
+	console.log(compu1,compu2,compu3);
+// ejercicio 3
+// imprimir de instancia 1 solamente la ram
+	console.log(compu1.ram);
+// '' ' ' 2 el disco y la ram
+	console.log(compu2.ram + '' + compu2.discoDuro);
+// '' la instancia 3 completa
+	console.log(compu3)
+
+</script>
+
+</body>
+</html>
